@@ -18,4 +18,6 @@ struct Regle{
     struct Regle *next;
 } typedef Regle;
 
-Makefile parser(const char *path);
+Makefile* parser(const char *path);
+void effacer_espaces(char *str);
+Variable* ajouter_variable(Variable *variables, char line[]);
